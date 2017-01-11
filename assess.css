@@ -6,8 +6,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font: arial;
-
 
 }
 
@@ -20,8 +18,6 @@ body {
   color: white;
 
 }
-
-
 
 .center{
   position: absolute;
@@ -37,8 +33,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-color: grey;
+  height: 80px;
 }
 
 .three-sect {
@@ -46,16 +41,29 @@ body {
   width: calc(100vw/3);
   float: left;
   position: relative;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-.middle {
+p {
 color: white;
+font-size: 20px;
+font: helvetica;
+font-family: sans-serif;
+margin: 0px;
+}
+
+.big-text{
+  font-size: 70px;
+  margin: 0px;
+  font-weight: bolder;
 }
 
 .lower{
   position: absolute;
   bottom: 30px;
-  padding: 10px 20px;
+  padding: 5px 12px;
   border-radius: 50px;
   left: 50%;
   transform: translate(-50%,0%);
@@ -64,3 +72,50 @@ color: white;
   color: grey;
   background-color: white;
 }
+
+.new-nav{
+    display: none;
+}
+
+.social{
+    display: none;
+}
+
+@media (max-width: 630px) {
+    .three-sect .center{
+        display: none;
+    }
+
+.new-nav{
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.circle{
+  padding: 5px 7px;
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 20px;
+}
+
+.social{
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  width: 20%;
+
+
+}
+.icons{
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+
+}
+
+
+  }
